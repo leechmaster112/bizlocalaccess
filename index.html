@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bizlocalaccess.directory - Business Directory</title>
-    <link rel="canonical" href="https://bizlocalaccess.directory/" />
+    <title>Bizlocalaccess - Business Directory</title>
+    <link rel="canonical" href="{{canonical_url}}" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair Display&family=Inter&display=swap');
         
@@ -390,14 +390,14 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="site-name" id="site-name">bizlocalaccess.directory</a>
+                <a href="/" class="site-name" id="site-name">Bizlocalaccess</a>
                 <a href="https://localrank.so/citations/" class="get-listed-btn" id="get-listed-btn" rel="nofollow">Get Listed</a>
             </div>
         </div>
     </header>
     
     <div class="search-container">
-        <div id="search-title" style="font-size: 64px; text-align: center; margin: 20px 0; color: #f5f5f5; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">bizlocalaccess.directory</div>
+        <div id="search-title" style="font-size: 64px; text-align: center; margin: 20px 0; color: #f5f5f5; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Bizlocalaccess</div>
         <div class="search-box">
             <input type="text" class="search-input" placeholder="Search for businesses" id="search-input">
             <button class="search-button" id="search-button">
@@ -417,39 +417,12 @@
         </div>
     </div>
     
-    
-    <div class="network-links">
-        <div class="network-links-container">
-            <h2 class="network-title">Our Partners</h2>
-            <div class="network-grid">
-    
-                <div class="network-item">
-                    <a href="https://directorycity.site" class="network-link" target="_blank">Directory City</a>
-                </div>
-                <div class="network-item">
-                    <a href="https://directoryexpress.site" class="network-link" target="_blank">Directory Express</a>
-                </div>
-                <div class="network-item">
-                    <a href="https://directorynowbiz.com" class="network-link" target="_blank">Directory Nowbusiness</a>
-                </div>
-                <div class="network-item">
-                    <a href="https://localbizarc.com" class="network-link" target="_blank">Local Business Arc</a>
-                </div>
-                <div class="network-item">
-                    <a href="https://localbizcenter.website" class="network-link" target="_blank">Local Business Center</a>
-                </div>
-                <div class="network-item">
-                    <a href="https://localbizconnect.online" class="network-link" target="_blank">Local Business Connect</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+    {{partner_links_html}}
     
     <footer>
         <div class="container">
             <div class="footer-content">
-                <span>© <span id="current-year">2025</span> <span id="footer-domain-name">bizlocalaccess.directory</span>. All rights reserved.</span>
+                <span>© <span id="current-year">2025</span> <span id="footer-domain-name">Bizlocalaccess</span>. All rights reserved.</span>
                 <a href="/sitemap.xml">Sitemap</a>
             </div>
         </div>
@@ -460,7 +433,7 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
         
         // Define the domain and API endpoint
-        const domainName = 'bizlocalaccess.directory';
+        const domainName = 'Bizlocalaccess';
         const apiEndpoint = '/citations/directory-urls/';
         
         // Format domain name for display (capitalize first part of domain)
